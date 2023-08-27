@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  background: #fff;
+  color: #444;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: #fe3407;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #fe3407;
+  outline: none;
+  text-decoration: none;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #807c78 #e1e0dd;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e1e0dd;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #807c78;
+  border-radius: 20px;
+  border: 3px solid #e1e0dd;
+}
+
+.page-link {
+
+  color: #ffb600;
+  font-weight: 500;
+}
+
+.page-link:hover {
+
+  color: #000;
+  font-weight: 500;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 24, 33, 0.75);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.nav-link:hover, .nav-link:active {
+  color: #0c2e8a !important;
+}
+
+.dropdown-item {
+  border-bottom: 1px solid #ddd;
+  padding: 7px 15px;
+  font-weight: 500;
+  color: #000;
+  font-size: 14px;
+
+}
+
+.dropdown-menu li:last-child a {
+  border-bottom: 0 !important;
+}
+
+.mt--6 {
+  margin-top: -6rem;
+}
+
+.carousel-caption {
+
+  bottom: 7rem;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.few_info_below_banner .card_light_box a {
+  display: inline-flex;
+  background: #ffffff;
+  height: 90px;
+  border-radius: 2px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 35px;
+  width: 100%;
+}
+
+.few_info_below_banner .card_light_box a span.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #404040;
+  display: inline-block;
+  width: 65%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.few_info_below_banner .card_light_box a span.knowmoretxt {
+  font-size: 12px;
+  font-weight: 800;
+  text-align: right;
+  color: #ffb600;
+  display: inline-block;
+  text-transform: uppercase;
+  width: 35%;
+}
+
+.few_info_below_banner {
+  position: relative;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+
+
+.service .card {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.service .card i {
+  transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.service .card h4, .service .card i, .service .card p {
+  position: relative;
+}
+
+.service .card h4 {
+  transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.service .card p {
+  transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.service .card:hover h4 {
+  color: #4869e8;
+}
+
+.service .card:hover i {
+  color: #fff;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.service .card:hover h4 {
+  color: #fff;
+
+}
+
+.service .card:hover p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.text-lg {
+  font-size: 50px;
+}
+
+.service .card:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: -500px;
+  width: 100%;
+  height: 100%;
+  background: #4869e8;
+  transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+}
+
+.service .card:hover:before {
+  bottom: 0px;
+}
+
+.bg-gray {
+  background: #f5f5f5;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-title h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 53px;
+  line-height: 63px;
+}
+
+p {
+  color: #7e8690;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  margin-bottom: 70px;
+}
+
+.text-md {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.intro-item i {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.text-blue {
+  color: #4869e8;
+}
+
+.intro-item h2 {
+  font-size: 18px;
+}
+
+.cta {
+  background: url("../img/banner-9.jpg") no-repeat;
+  background-size: auto;
+  background-size: cover;
+  position: relative;
+}
+
+.service .card {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 25px 0px rgba(85, 128, 255, 0.2);
+}
+
+.service i {
+  font-size: 40px;
+}
+
+.process-block h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.process-block span {
+  color: #6F8BA4;
+}
+
+.footer {
+  background: #24282f;
+  padding-bottom: 10px;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.footer .widget p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer-btm {
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.footer i {
+  margin-right: 5px;
+}
+
+.footer li {
+  line-height: 2.5em;
+}
+
+.scrollTop {
+  position: fixed;
+  right: 2%;
+  bottom: 10px;
+  background-color: rgb(121, 121, 121);
+  padding: 0px 10px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  line-height: 2em;
+  cursor: pointer;
+}
+
+.scrollTop a {
+  font-size: 30px;
+  color: #fff;
+}
+
+.scrollTop:hover {
+  background-color: #000;
+}
+
+.bg-1 {
+  background: url("../img/banner-7.jpg") no-repeat 50% 50%;
+  background-size: auto;
+  background-size: cover;
+}
+
+.page-title {
+  padding: 120px 0px 30px 0px;
+  position: relative;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-lg {
+  font-size: 50px;
+  color: #fff !important;
+}
+
+.page-title .breadcumb-nav {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.inner-block h2 {
+  font-weight: 900;
+  color: #111;
+}
+
+.feature-list ul li {
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.feature-list ul li i {
+  color: #FF715B;
+}
+
+.mr-3, .mx-3 {
+  margin-right: 1rem !important;
+}
+
+.shadow-img {
+  box-shadow: 0px 15px 60px rgba(62, 62, 62, 0.102) !important;
+}
+
+.service-item-list {
+  padding: 15px 30px;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0 0 20px;
+}
+
+.service-item-list i {
+  font-size: 30px;
+  margin-top: 8px;
+  line-height: 1.1;
+  margin-right: 20px;
+  float: left;
+  color: #FF715B;
+}
+
+.service-item-list p {
+  padding-left: 50px;
+  line-height: 1.6;
+  margin-bottom: 0px;
+  color: #111;
+}
+
+.contact-form-wrap .form-group .form-control {
+  height: 48px;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  width: 100%;
+}.contact-form-wrap .form-group {
+  padding-bottom: 15px;
+  margin: 0px;
+}.short-info {
+  padding: 40px;
+  border: 1px solid #eee;
+}.short-info li {
+  margin-bottom: 25px;
+}
